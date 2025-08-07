@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('/font/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@theme {  
+    --font-display: "Montserrat", sans-serif; 
+}
+
+@layer components {
+    .bs-link {
+        @apply text-violet-300 hover:text-violet-400 transition duration-300;
+    }
+}
