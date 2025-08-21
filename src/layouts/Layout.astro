@@ -1,0 +1,47 @@
+---
+import '@fontsource-variable/montserrat';
+import '../styles/global.css';
+import Logo from '../assets/img/wordmark-dark.png';
+
+const { title, classes } = Astro.props;
+const year = new Date().getFullYear();
+
+let renderedTitle = 'Bloxstrap';
+let mainClasses = 'flex-1 my-12';
+
+if (title)
+    renderedTitle += ' - ' + title;
+
+if (classes)
+    mainClasses += ' '  + classes;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+        <meta name="description" content="Bloxstrap is an alternative launcher for Roblox that provides additional useful features and functions." />
+        <meta name="author" content="Bloxstrap" />
+		<title>{renderedTitle}</title>
+	</head>
+	<body class="flex flex-col min-h-screen bg-neutral-900 text-white font-display mx-auto max-w-7xl p-8">
+        <nav>
+            <div class="bg-neutral-950 px-4 py-4 rounded-xl flex flex-col items-center justify-between gap-y-4 sm:flex-row">
+                <img src={Logo.src} class="max-h-8" />
+                <div class="flex gap-x-6 pr-2">
+                    <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="/">Download</a>
+                    <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="/faq">FAQ</a>
+                    <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="https://github.com/bloxstraplabs/bloxstrap/wiki">Wiki</a>
+                    <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="https://github.com/bloxstraplabs/bloxstrap">GitHub</a>
+                </div>
+            </div>
+        </nav>
+        <main class={mainClasses}>
+			<slot />
+        </main>
+        <footer class="text-center">
+            <p>&copy; {year} Bloxstrap developers and contributors. Bloxstrap is not affiliated with Roblox in any way.</p>
+        </footer>
+    </body>
+</html>

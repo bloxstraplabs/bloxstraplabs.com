@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {  
+    --font-display: 'Montserrat Variable', sans-serif; 
+}
+
+@layer components {
+    .bs-link {
+        @apply text-violet-300 hover:text-violet-400 transition duration-300;
+    }
+}

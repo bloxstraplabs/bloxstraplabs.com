@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="FAQ">
+    <section class="pb-8">
+        <h1 class="text-4xl font-medium mb-4 sm:text-5xl">Frequently asked questions</h1>
+        <h2 class="text-lg text-gray-200 mb-4">If you don't find a quick answer here, see the <a class="bs-link" href="https://github.com/bloxstraplabs/bloxstrap/wiki">Wiki</a>.</h2>
+    </section>
+
+    <section class="mb-12">
+        <h1 class="text-3xl font-medium mb-4">How can I trust that this isn't malware?</h1>
+        <p class="mb-2">We wouldn't get away with it if it was. Bloxstrap is very transparent and is <a class="bs-link" href="https://github.com/bloxstraplabs/bloxstrap">fully open-source</a>, so its inner code can be seen by anyone. And people do look at the code, since we have a lot of contributors. If there was malicious code, it wouldn't go unnoticed. We're completely clean <a class="bs-link" href="https://www.virustotal.com/gui/file/c7f713edb0ccbc992e03546e711ae19a34e5a600fa88e615c5977f31b25cd82d">on VirusTotal</a> too.</p>
+    </section>
+
+    <section class="mb-12">
+        <h1 class="text-3xl font-medium mb-4">Will using Bloxstrap get me banned?</h1>
+        <p class="mb-2"><span class="font-bold">Short answer:</span> No, it won't. We are 100% sure of it, and even <a class="bs-link" href="https://devforum.roblox.com/t/welcoming-byfron-to-roblox/2018233/693?u=xtremeguy2256">Roblox Staff have confirmed that fact</a>.</p>
+        <p class="mb-2"><span class="font-bold">Long answer:</span> <a class="bs-link" href="https://github.com/bloxstraplabs/bloxstrap/wiki/Why-it's-not-reasonably-possible-for-you-to-be-banned-by-Bloxstrap">See here</a>.</p>
+    </section>
+
+    <section class="mb-12" id="where-can-i-find-mods">
+        <h1 class="text-3xl font-medium mb-4">Where can I find mods?</h1>
+        <p class="mb-2"><a class="bs-link" href="https://gamebanana.com/search?_sModelName=Mod&_sOrder=best_match&_sSearchString=bloxstrap&_idGameRow=2879">GameBanana</a> is a good place to find some. Just keep in mind that some may not work properly, since Roblox updates may break them.</p>
+        <p class="mb-2">To learn how to make your own, <a class="bs-link" href="https://github.com/bloxstraplabs/bloxstrap/wiki/Adding-custom-mods">see here</a>.</p>
+    </section>
+
+    <section class="mb-12">
+        <h1 class="text-3xl font-medium mb-4">I'm having an issue with Bloxstrap or it's not working properly</h1>
+        <p class="mb-2">See the <a class="bs-link" href="https://github.com/bloxstraplabs/bloxstrap/wiki">Wiki</a>, which should address any issues you may be having.</p>
+        <p>Most issues are caused by user configuration. Though it could also be Roblox itself or Bloxstrap itself. Some general troubleshooting steps:</p>
+        <ul class="list-decimal px-6 py-2">
+            <li><a class="bs-link" href="https://github.com/bloxstraplabs/bloxstrap/wiki/Uninstalling-Bloxstrap">Uninstall Bloxstrap</a> *without* keeping user settings</li>
+            <li>Launch Roblox normally, check if it works fine</li>
+            <li>Reinstall Bloxstrap and launch, check if it works fine</li>
+        </ul>
+        <p>Ideally, whichever step things last work fine at is how you should keep things.</p>
+    </section>
+</Layout>
