@@ -27,7 +27,7 @@ Sets the player's Discord Rich Presence.
 
 When structuring a RichPresence type, here's what to keep in mind:
 
-- Bloxstrap internally preserves state. A nil value of a property indicates that the it should be kept as what it already was before. You don't need to give it data everytime.
+- Bloxstrap internally preserves state. A nil value of a property indicates that it should be kept as what it already was before. You don't need to give it data everytime.
 - For erasing fields:
     - string property types can be set as a blank string.
     - number property types can be set as zero.
