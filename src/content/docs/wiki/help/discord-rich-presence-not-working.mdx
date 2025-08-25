@@ -1,0 +1,31 @@
+---
+title: Discord Rich Presence not working
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+Discord Rich Presence requires the Discord desktop app to be installed and running. 
+
+Here are some things to check for to fix the most common problems.
+
+### 1. Discord privacy settings
+
+Check your Discord settings and make sure that your activity is set to be shared with others.
+
+![A screenshot of the Discord settings menu in the 'Activity Privacy' submenu showing that the 'Share your detected activities with others' option needs to be enabled](../../../../assets/wiki/help-discord-activity-privacy.png)
+
+### 2. Administrator issues
+
+Rich Presence will not work if Discord is installed as Administrator. If you see a User Account Control prompt (pictured below) every time you start Discord, then you have it installed as Administrator. 
+
+To fix this, just reinstall Discord.
+
+![A screenshot showing a Windows User Account Control prompt of the Discord updater](../../../../assets/wiki/help-discord-activity-admin.png)
+
+### 3. Multiple conflicting clients
+
+Discord Rich Presence will only properly work with one Discord client. Ensure you only have one open and running.
+
+### Still not working?
+
+If Discord Rich Presence still is not working, then please [open an issue on GitHub](https://github.com/bloxstraplabs/bloxstrap/issues).

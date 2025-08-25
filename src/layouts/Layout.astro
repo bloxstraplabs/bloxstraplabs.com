@@ -10,7 +10,7 @@ let renderedTitle = 'Bloxstrap';
 let mainClasses = 'flex-1 my-12';
 
 if (title)
-    renderedTitle += ' - ' + title;
+    renderedTitle = `${title} | Bloxstrap`;
 
 if (classes)
     mainClasses += ' '  + classes;
@@ -31,8 +31,8 @@ if (classes)
                 <img src={Logo.src} class="max-h-8" />
                 <div class="flex gap-x-6 pr-2">
                     <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="/">Download</a>
-                    <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="/faq">FAQ</a>
-                    <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="https://github.com/bloxstraplabs/bloxstrap/wiki">Wiki</a>
+                    <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="/wiki/">Wiki</a>
+                    <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="/wiki/faq/">FAQ</a>
                     <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="https://github.com/bloxstraplabs/bloxstrap">GitHub</a>
                 </div>
             </div>

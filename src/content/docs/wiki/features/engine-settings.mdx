@@ -1,0 +1,107 @@
+---
+title: Engine settings
+description: How Bloxstrap can be used to tweak Roblox (through FastFlags)
+---
+
+import { Badge } from '@astrojs/starlight/components';
+
+Bloxstrap allows you to tweak specific parameters of the Roblox game engine that you normally cannot change, which it does through the [Fast Flag system](#fast-flags).
+
+## Presets
+
+Not all presets are listed here, just ones that may need more info for the user.
+
+If any presets get removed in the future, it's because Roblox has changed how their [Fast Flags](#fast-flags) work. Typically because they've either removed them, or otherwise made them useless.
+
+### Exclusive fullscreen
+
+This is always enabled it by default. Normally, Roblox fullscreens in borderless windowed mode. With Bloxstrap, you can use Alt+Enter to enter true fullscreen mode.
+
+Using this might give a small performance boost, since Roblox gets full control of your screen instead of just being a window.
+
+:::caution[Using this comes with some downsides!]
+- You cannot see server location notifications from Bloxstrap
+- Popout windows in the Roblox app will not work (for browsing servers and badges, etc)
+- You may encounter GPU quirks (VSync, weird resolutions, mouse cursor not showing)
+
+To avoid all this, just fullscreen normally without using Alt+Enter.
+:::
+
+### Framerate limit
+
+This allows you to change the FPS limit to a specific value that Roblox may not let you be able to choose from in the in-game settings.
+
+Setting this to zero will disable this option, and use Roblox's settings instead.
+
+We recommend not using this and instead using the in-game settings if you can.
+
+### Preferred lighting technology
+
+Roblox offers a [few different lighting technologies](https://create.roblox.com/docs/reference/engine/enums/Technology) for developers to use in their games. 
+
+There are three options of Voxel, ShadowMap, and Future. Those range from oldest to newest.
+
+Future will look the best, while Voxel and ShadowMap are kept for legacy reasons, or for older looks.
+
+By default, it's up to the game developer to choose what's used. This option allows you to override it.
+
+:::caution[Using this comes with some downsides!]
+Don't keep Future enabled all the time.
+
+If you do, it can make some games look good, but it might also make some games unplayable.
+
+In some games, things may be too bright or some things may not be visible. 
+
+Games are designed specifically for their own lighting tech. Using Future on an older game designed for older lighting tech can cause problems like this.
+
+If you want to use Future on a game that doesn't use it, try it out, make sure everything is good, and only enable it when you want to play that game.
+:::
+
+### GUI hiding
+
+This option requires you to be in a group. By default, it's set for [the Bloxstrap group](https://www.roblox.com/communities/32380007/Bloxstrap#!/about), but you can change it.
+
+When this is enabled, you use it in-game through keyboard shortcuts.
+
+| Combination | Action |
+| ----------- | ------ |
+| `Ctrl + Shift + B` | Toggles GUIs in 3D space (BillboardGuis, SurfaceGuis, etc) |
+| `Ctrl + Shift + C` | Toggles game-specific ScreenGuis |
+| `Ctrl + Shift + G` | Toggles Roblox CoreGuis |
+| `Ctrl + Shift + N` | Toggles player names, and other BillboardGuis that show up above a player |
+
+You can change it to need a group of your own instead of the Bloxstrap group by using the Fast Flag editor (scroll down in the settings for it). Enable 'Show preset flags' to see it, and change it to any group ID you want.
+
+![](../../../../assets/wiki/fflag-guihide.png)
+
+### Preserving rendering quality
+
+If your Windows display scaling is greater than 100%, then Roblox will decrease its rendering resolution. Enabling this will prevent that from happening.
+
+| Before | After |
+| ------ | ----- |
+| [![Image showing before option is enabled, showing noticeably worse quality](/assets/wiki/fflag-dpi-before.jpg)](/assets/wiki/fflag-dpi-before.jpg) | [![Image showing after option is enabled, showing noticeably better quality](/assets/wiki/fflag-dpi-after.jpg)](/assets/wiki/fflag-dpi-after.jpg) |
+
+<Badge text="Click image to enlarge" variant="tip" />
+
+## Fast Flags
+
+The Engine Settings options work by using Roblox's Fast Flag system. 
+
+It's a system for Roblox engineers to dynamically modify the game engine without needing to push a full update, typically for [A/B testing](https://en.wikipedia.org/wiki/A/B_testing) or for feature rollouts. All Fast Flags and their behaviour are defined by Roblox engineers.
+
+Roblox loads a huge list of them online when it starts up. However, they can be locally overriden too, and that's what Bloxstrap is doing. 
+
+Realistically, this is only intended to be used by Roblox engineers for local testing, and that's why some options here come with some drawbacks. However, we think it can present some really useful functions in some cases, especially in some places where we think Roblox falls short in (like advanced graphics options), so we have them here.
+
+### Fast Flag editor
+
+If you're a Roblox power user, you can manually configure Fast Flags using the built-in editor.
+
+:::caution
+Unless this Wiki tells you to, **please don't touch the editor** if you don't know what you're doing. This includes importing lists that other people have made. 
+
+You'll cause nothing but problems for yourself if you do, and we don't want you complaining to us about it.
+
+And especially please **do not** buy flag lists, since none of this stuff is special or secret.
+:::

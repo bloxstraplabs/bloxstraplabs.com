@@ -1,0 +1,31 @@
+---
+title: Discord Rich Presence
+description: How Bloxstrap can be used to show your friends on Discord what Roblox game you're playing
+---
+
+import { Image } from 'astro:assets';
+import Bleh from '../../../../assets/wiki/discord-activity.png';
+import BlehTwo from '../../../../assets/wiki/discord-activity-bsrpc.png';
+
+:::note
+This feature requires [activity tracking](/wiki/features/activity-tracking/) to be enabled.
+
+The Discord desktop app must be installed and running for this to work.
+:::
+
+Bloxstrap can make your Discord profile show what game you're playing on Roblox as an activity. It looks something like this.
+
+<div>
+    <span style="display:inline-block;">
+        <Image alt="A user's discord game activity showing the Roblox game 'Natural Disaster Survival" src={Bleh} />
+    </span>
+    <span style="display:inline-block;">
+        <Image alt="A user's discord game activity showing the Roblox game 'LOCOfficial' with custom game info" src={BlehTwo} />
+    </span>
+</div>
+
+The 'Join server' button allows for anybody who can see your activity to join your server, but this can be disabled.
+
+You can also choose to show your Roblox account on the activity, with your avatar replacing the small Roblox icon.
+
+You may also notice that the second image of LOCOfficial shows extra info about the game, while Natural Disaster Survival doesn't. Game developers are able to control what's shown on the activity by using [BloxstrapRPC](#) and can customise it to their game.
