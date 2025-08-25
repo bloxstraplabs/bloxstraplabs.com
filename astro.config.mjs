@@ -26,6 +26,9 @@ export default defineConfig({
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/bloxstraplabs/bloxstrap' },
 			],
+			editLink: {
+				baseUrl: 'https://github.com/bloxstraplabs/bloxstraplabs.com/edit/main/',
+			},
 			sidebar: [
 				{ label: 'Welcome', link: 'wiki/' },
 				{ label: 'What is Bloxstrap?', link: 'wiki/about' },
