@@ -7,7 +7,7 @@ This page details how Bloxstrap handles and exchanges data over the internet.
 
 The privacy policy may change as new versions are released, which the release notes will mention. 
 
-See past versions [here](#) ([old wiki](https://github.com/bloxstraplabs/bloxstrap/wiki/Privacy-Policy/_history)).
+See past versions [here](https://github.com/bloxstraplabs/bloxstraplabs.com/commits/main/src/content/docs/wiki/info/privacy-policy.md) ([old wiki](https://github.com/bloxstraplabs/bloxstrap/wiki/Privacy-Policy/_history)).
 
 ## Analytics
 
