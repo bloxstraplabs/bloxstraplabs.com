@@ -8,6 +8,7 @@ This feature serves as the basis for a few other features:
 - [Discord Rich Presence](/wiki/features/discord-rich-presence/)
 - [Server location hints](/wiki/features/server-location-hints/)
 - [Game history](/wiki/features/game-history/)
+- [Don't exit to Desktop app](/wiki/features/dont-exit-to-desktop-app/)
 
 To use these features, activity tracking will need to be enabled.
 

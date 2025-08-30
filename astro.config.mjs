@@ -43,7 +43,8 @@ export default defineConfig({
 						{ slug: 'wiki/features/activity-tracking' },
 						{ slug: 'wiki/features/discord-rich-presence' },
 						{ slug: 'wiki/features/server-location-hints' },
-						{ slug: 'wiki/features/game-history' }
+						{ slug: 'wiki/features/game-history' },
+						{ slug: 'wiki/features/dont-exit-to-desktop-app' }
 					]
 				},
 				{
