@@ -24,6 +24,7 @@ export default defineConfig({
 			},
 			customCss: ['./src/styles/starlight-custom.css'],
 			social: [
+				{ icon: 'discord', label: 'Discord', href: '/discord' },
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/bloxstraplabs/bloxstrap' },
 			],
 			editLink: {
