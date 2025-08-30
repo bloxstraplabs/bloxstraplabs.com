@@ -7,7 +7,7 @@ Bloxstrap is not exploit software, and does not behave like it. It's completely 
 
 Roblox is not against players using Bloxstrap and they don't have any reason to be. This fact has been confirmed by Roblox Staff. ([source](https://devforum.roblox.com/t/welcoming-byfron-to-roblox/2018233/693?u=xtremeguy2256))
 
-![A screenshot of the Roblox Devforum comment at the source link stated above](../../../../assets/wiki/devforum-bloxstrap-bans.png)
+![A screenshot of the Roblox Devforum comment at the source link stated above](@assets-wiki/devforum-bloxstrap-bans.png)
 
 ## What Roblox bans people for and how
 

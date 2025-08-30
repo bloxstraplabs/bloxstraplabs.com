@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import DiscordCard from '../assets/img/discord.png';
 import ModsCard from '../assets/img/mods.png';
@@ -29,27 +30,27 @@ import ModsCard from '../assets/img/mods.png';
 			<p class="text-gray-200">Share what you're doing among friends with ease, with extensible support for <a class="bs-link" href="/wiki/developers/bloxstraprpc/">developer integration</a>.</p>
 		</div>
 		<div>
-			<img src={DiscordCard.src} class="mx-auto">
+			<Image src={DiscordCard} alt="Screenshots showing Roblox games being shown under a Discord profile" class="mx-auto" />
 		</div>
 	</div>
 
 	<div class="py-8 flex flex-col items-center justify-center gap-x-12 gap-y-6 lg:flex-row-reverse">
-		<div class="max-w-lg">
+		<div class="flex-1">
 			<h1 class="text-2xl font-medium mb-2">Customisation made easier</h1>
 			<p class="text-gray-200">Modify local assets without worrying about them being erased by Roblox updates, and with easy importing of <a class="bs-link" href="/wiki/faq#where-can-i-find-mods">community-curated mods</a>.</p>
 		</div>
-		<div>
-			<img src={ModsCard.src} class="mx-auto max-h-64">
+		<div class="flex-1">
+			<Image src={ModsCard} alt="Screenshot showing how Bloxstrap can be used to replace the Roblox mouse cursor" class="mx-auto max-w-90" />
 		</div>
 	</div>
 	
 	<div class="py-8 flex flex-col items-center justify-center gap-x-12 gap-y-6 lg:flex-row">
-		<div class="max-w-lg">
+		<div class="flex-1">
 			<h1 class="text-2xl font-medium mb-2">Free and open source</h1>
 			<p class="text-gray-200 mb-2">Bloxstrap's code is available on GitHub and anyone can see inside it, contribute to it, or even make their own version.</p>
 			<p><a class="bs-link" href="https://github.com/bloxstraplabs/bloxstrap">github.com/bloxstraplabs/bloxstrap</a></p>
 		</div>
-		<div class="text-left">
+		<div class="flex-1 text-left">
 			<img class="mb-2" src="https://contrib.rocks/image?repo=bloxstraplabs/bloxstrap" />
 			<small class="text-gray-300">Made with <a class="bs-link" href="https://contrib.rocks">contrib.rocks</a></small>
 		</div>

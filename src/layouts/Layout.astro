@@ -1,6 +1,7 @@
 ---
 import '@fontsource-variable/montserrat';
 import '../styles/global.css';
+import { Image } from 'astro:assets';
 import Logo from '../assets/img/wordmark-dark.png';
 
 const { title, classes } = Astro.props;
@@ -28,7 +29,7 @@ if (classes)
 	<body class="flex flex-col min-h-screen bg-neutral-900 text-white font-display mx-auto max-w-7xl p-8">
         <nav>
             <div class="bg-neutral-950 px-4 py-4 rounded-xl flex flex-col items-center justify-between gap-y-4 sm:flex-row">
-                <img src={Logo.src} class="max-h-8" />
+                <Image src={Logo} alt="Bloxstrap Logo" class="max-w-40" />
                 <div class="flex gap-x-6 pr-2">
                     <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="/wiki/">Wiki</a>
                     <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="/wiki/faq/">FAQ</a>

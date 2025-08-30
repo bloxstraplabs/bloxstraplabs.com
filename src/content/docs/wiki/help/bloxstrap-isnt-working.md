@@ -14,7 +14,7 @@ To fix this, launch Roblox with Bloxstrap manually once. This will register Blox
 
 Don't launch Roblox through the normal 'Roblox Player' icon when using Bloxstrap, as it'll undo that.
 
-![Screenshot of the Windows Desktop, showing both the 'Roblox Player' and Bloxstrap's 'Launch Roblox' icons.](../../../../assets/wiki/shortcuts-roblox-and-bloxstrap.png)
+![Screenshot of the Windows Desktop, showing both the 'Roblox Player' and Bloxstrap's 'Launch Roblox' icons.](@assets-wiki/shortcuts-roblox-and-bloxstrap.png)
 
 ## Bloxstrap doesn't open at all
 
@@ -24,4 +24,4 @@ This is happening likely because you have an outdated version of the .NET 6 runt
 
 Be sure that you have the latest version installed. [Download it here.](https://aka.ms/dotnet-core-applaunch?missing_runtime=true&arch=x64&rid=win11-x64&apphost_version=6.0.20&gui=true)
 
-![Screenshot of the Windows Settings app in 'Apps & Features', showing 'Microsoft Windows Desktop Runtime - 6.0.16'](../../../../assets/wiki/runtime.png)
+![Screenshot of the Windows Settings app in 'Apps & Features', showing 'Microsoft Windows Desktop Runtime - 6.0.16'](@assets-wiki/runtime.png)
