@@ -35,6 +35,26 @@ When structuring a RichPresence type, here's what to keep in mind:
 - For reverting fields to their defaults:
     - string property types can be set as "&lt;reset&gt;".
     - RichPresenceImage property types can have their 'reset' property set to true.
+- RichPresenceImage types can take either an asset ID number, or an rbxassetid string.
+
+Example usage:
+
+```luau
+local BloxstrapRPC = require(game.ReplicatedStorage.BloxstrapRPC)
+
+BloxstrapRPC.SetRichPresence({
+    details = "Example details value",
+    state = "Example state value",
+    largeImage = {
+        assetId = 10630555127,
+        hoverText = "Example hover text"
+    },
+    smallImage = {
+        assetId = 13409122839,
+        hoverText = "Example hover text"
+    }
+})
+```
 
 ### SetLaunchData
 
@@ -45,7 +65,7 @@ SetLaunchData(data: string) : ()
 Sets the launch data for invite deeplinks created by Bloxstrap, which is done in two different places:
 
 - The "Join server" button on the Rich Presence activity
-- The player manually copying the link from the [activity tracking](/wiki/features/activity-tracking/) menu to share with their friends
+- The player manually copying the link from the [activity tracker](/wiki/features/activity-tracking/) menu to share with their friends
 
 This can be used to check if a player is joining through someone's Rich Presence activity, for example.
 
@@ -84,7 +104,7 @@ This way, scripts are able to send data to Bloxstrap simply by just printing a s
 ```lua
 print('[BloxstrapRPC] {"command": "SetRichPresence", "data": {"details": "hi"}}')
 ```
-All BloxstrapRPC features heavily rely on knowing the user's current activity state (what game they're in, etc). Bloxstrap handles this through its [activity tracker](/wiki/features/activity-tracking/) system. 
+All BloxstrapRPC features heavily rely on knowing the player's current playing status (what game they're in, etc). Bloxstrap handles this through its [activity tracker](/wiki/features/activity-tracking/) system. 
 
 There aren't any libraries to handle this stuff, but you're free to [implement it yourself](https://github.com/pizzaboxer/bloxstrap/blob/main/Bloxstrap/Integrations/ActivityWatcher.cs) in your programming language of choice. Shouldn't be too difficult.
 
@@ -95,6 +115,6 @@ Areas of interest:
 
 Something to note is that BloxstrapRPC relies on the existence of nullable types, so that attributes can remain undefined when not set. This is how fields can persist their previous values with SetRichPresence. This may be problematic if your language doesn't support nullable types (like Go, which will assume type defaults).
 
-We hope for BloxstrapRPC to be more than just a Bloxstrap thing, but for it to be an open standard for stuff like this. The [Sober](https://sober.vinegarhq.org) project has BloxstrapRPC support, so their users get game-specific rich presence too by default. People have made Bloxstrap forks that extend the command set, allowing for some really cool effects like the developers of Project: Afternight have done ([link](https://x.com/Fireable__/status/1723157635912901109)).
+We hope for BloxstrapRPC to be more than just a Bloxstrap thing, but for it to be an open standard for stuff like this. The [Sober](https://sober.vinegarhq.org) project has BloxstrapRPC support, so their users get game-specific rich presence too by default. People have made Bloxstrap forks that extend the command set, allowing for some really cool effects like the developers of Project: Afternight have done ([link](https://x.com/Fireable__/status/1723157635912901109)). 
 
-Have fun.
+There's a lot of potential to be had here.

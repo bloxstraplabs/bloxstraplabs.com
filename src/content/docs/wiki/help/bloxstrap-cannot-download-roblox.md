@@ -6,4 +6,4 @@ This problem happens when Bloxstrap is trying to download the files for the Robl
 
 The most common fix for it is to just restart your computer, and then try and launch Roblox again. If you're still having problems, it'll probably just fix itself at some point. Otherwise, you'll just have to stick to the original Roblox launcher (if it even works).
 
-If nothing else works, unfortunately there's not much else yo can do. **Please do not open an issue for this.**
+If nothing else works, unfortunately there's not much else you can do. **Please do not open an issue for this.**
