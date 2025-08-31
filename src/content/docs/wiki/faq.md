@@ -2,8 +2,6 @@
 title: Frequently asked questions
 ---
 
-For anything not mentioned here, try using the search above.
-
 ## Will using this get me banned?
 
 **Short answer:** No, it won't. We are 100% sure of it, and even [Roblox Staff have confirmed that fact](https://devforum.roblox.com/t/welcoming-byfron-to-roblox/2018233/693?u=xtremeguy2256). Bloxstrap is not exploit software and has nothing to do with exploiting.
