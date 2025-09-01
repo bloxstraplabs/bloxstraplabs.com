@@ -58,7 +58,7 @@ export default defineConfig({
 						{ slug: 'wiki/help/bloxstrap-isnt-working' },
 						{ slug: 'wiki/help/roblox-crashes-or-does-not-launch' },
 						{ slug: 'wiki/help/discord-rich-presence-not-working' },
-						{ slug: 'wiki/help/bloxstrap-cannot-download-roblox' },
+						// { slug: 'wiki/help/bloxstrap-cannot-download-roblox' },
 						{ slug: 'wiki/help/change-where-bloxstrap-is-installed' },
 						{ slug: 'wiki/help/uninstalling-bloxstrap' },
 					]
