@@ -18,8 +18,8 @@ export default defineConfig({
 			favicon: '/favicon.ico',
 			disable404Route: true,
 			logo: {
-				light: './src/assets/img/wordmark-light.png',
-				dark: './src/assets/img/wordmark-dark.png',
+				light: './src/assets/img/wordmark-light.webp',
+				dark: './src/assets/img/wordmark-dark.webp',
 				replacesTitle: true
 			},
 			customCss: ['./src/styles/starlight-custom.css'],

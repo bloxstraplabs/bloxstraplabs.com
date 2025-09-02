@@ -18,10 +18,10 @@ By default, Bloxstrap's installation folder is at `%localappdata%\Bloxstrap`
 
 After you move it, you will need to open the folder, run Bloxstrap.exe, and re-enable any shortcuts you had in the settings menu. You'll also need to delete the old ones.
 
-![Screenshot showing the Bloxstrap folder from %localappdata% being dragged to another folder](@assets-wiki/change-install-move.png)
+![Screenshot showing the Bloxstrap folder from %localappdata% being dragged to another folder](@assets-wiki/change-install-move.webp)
 
 ### 2. Reinstall Bloxstrap
 
 When you install Bloxstrap, it gives you the option to choose where you want to install it. You're only provided this option when installing, so reinstalling will let you do this.
 
-![SCreenshot showing the Bloxstrap Installer asking the user to 'choose where to install to'](@assets-wiki/change-install-reinstall.png)
+![SCreenshot showing the Bloxstrap Installer asking the user to 'choose where to install to'](@assets-wiki/change-install-reinstall.webp)
