@@ -15,10 +15,10 @@ By your choice, Bloxstrap may collect analytics. It's very minimal, only as stat
 
 Here's what we collect and why:
 - **Bloxstrap install states.** If you install, uninstall or upgrade Bloxstrap, it gets recorded. It's just for general usage figures.
-- **Roblox channel enrollment.** If you're enrolled in a non-production Roblox channel, it'll get recorded. [This data is published publicly.](https://grafana.pizzaboxer.xyz/goto/whOxjg9NR?orgId=1)
+- **Roblox channel enrollment.** If you're enrolled in a non-production Roblox channel, it'll get recorded. [This data is published publicly.](https://grafana.pizzaboxer.xyz/public-dashboards/a9fb9745c73a4abaa4ba2da10c885b89)
 - **Bloxstrap exceptions.** If you encounter an error in Bloxstrap then it will be reported to us, along with a log file.
 
-For each data point collected, we also record what version of Bloxstrap you're using.
+For each data point collected, we also record what **version of Bloxstrap** you're using.
 
 The system that processes this data is open-source at [github.com/bloxstraplabs/services](https://github.com/bloxstraplabs/services).
 
