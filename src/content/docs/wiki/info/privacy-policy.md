@@ -38,4 +38,4 @@ Bloxstrap interacts with **Roblox** for:
 - Getting launch settings
 - Checking for Roblox updates 
 
-Bloxtrap downloads Roblox from either **AWS**, **Akamai**, or **Cachefly**.
+Bloxstrap downloads Roblox from either **AWS**, **Akamai**, or **Cachefly**.
