@@ -1,6 +1,5 @@
 ---
 title: Engine settings
-description: How Bloxstrap can be used to tweak Roblox (through FastFlags)
 ---
 
 import { Badge } from '@astrojs/starlight/components';
@@ -10,8 +9,6 @@ Bloxstrap allows you to tweak specific parameters of the Roblox game engine that
 ## Presets
 
 Not all presets are listed here, just ones that may need more info for the user.
-
-If any presets get removed in the future, it's because Roblox has changed how their [Fast Flags](#fast-flags) work. Typically because they've either removed them, or otherwise made them useless.
 
 ### Exclusive fullscreen
 
@@ -26,37 +23,6 @@ Using this might give a small performance boost, since Roblox gets full control 
 
 To avoid all this, just fullscreen normally without using Alt+Enter.
 :::
-
-### Framerate limit
-
-This allows you to change the FPS limit to a specific value that Roblox may not let you be able to choose from in the in-game settings.
-
-Setting this to zero will disable this option, and use Roblox's settings instead.
-
-We recommend not using this and instead using the in-game settings if you can, since setting to higher than 240 may cause issues with high ping.
-
-### Preferred lighting technology
-
-:::note
-This option doesn't work anymore, sorry.
-:::
-
-### GUI hiding
-
-This option requires you to be in a group. By default, it's set for [the Bloxstrap group](https://www.roblox.com/communities/32380007/Bloxstrap#!/about), but you can change it.
-
-When this is enabled, you use it in-game through keyboard shortcuts.
-
-| Combination | Action |
-| ----------- | ------ |
-| `Ctrl + Shift + B` | Toggles GUIs in 3D space (BillboardGuis, SurfaceGuis, etc) |
-| `Ctrl + Shift + C` | Toggles game-specific ScreenGuis |
-| `Ctrl + Shift + G` | Toggles Roblox CoreGuis |
-| `Ctrl + Shift + N` | Toggles player names, and other BillboardGuis that show up above a player |
-
-You can change it to need a group of your own instead of the Bloxstrap group by using the Fast Flag editor (scroll down in the settings for it). Enable 'Show preset flags' to see it, and change it to any group ID you want.
-
-![](@assets-wiki/fflag-guihide.png)
 
 ### Preserving rendering quality
 
@@ -76,16 +42,6 @@ It's a system for Roblox engineers to dynamically modify the game engine without
 
 Roblox loads a huge list of them online when it starts up. However, they can be locally overriden too, and that's what Bloxstrap is doing. 
 
-Realistically, this is only intended to be used by Roblox engineers for local testing, and that's why some options here come with some drawbacks. However, we think it can present some really useful functions in some cases, especially in some places where we think Roblox falls short in (like advanced graphics options), so we have them here.
+Realistically, this is only intended to be used by Roblox engineers for local testing. However, we think it can present some really useful functions in some cases, especially in some places where we think Roblox falls short in (like advanced graphics options), so we have them here.
 
-### Fast Flag editor
-
-If you're a Roblox power user, you can manually configure Fast Flags using the built-in editor.
-
-:::caution
-Unless this Wiki tells you to, **please don't touch the editor** if you don't know what you're doing. This includes importing lists that other people have made. 
-
-You'll cause nothing but problems for yourself if you do, and we don't want you complaining to us about it.
-
-And especially please **do not** buy flag lists, since none of this stuff is special or secret.
-:::
+Since September 30th 2025, Roblox has selectively whitelisted what Fast Flags can be applied to the client [(Devforum announcement)](https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569/214). Many of Bloxstrap's options (the Fast Flag editor and many presets) have been removed.
