@@ -11,7 +11,7 @@ This topic is open for discussion and feedback on [this DevForum article](https:
 
 BloxstrapRPC is a one-way messaging system that allows for a Roblox LocalScript to send data to the Bloxstrap application running on the player's computer.
 
-See this [video](https://www.youtube.com/watch?v=8yGinJMO1Ms) for a demo, showing how it can control the user's Discord Rich Presence. To try it out for yourself, see the [Bloxstrap Test Place](https://www.roblox.com/games/13307536247/Bloxstrap-Test-Place) or [BloxstrapRPC Showcase, by 1011025m](#https://www.roblox.com/games/476005980/BloxstrapRPC-Showcase).
+See this [video](https://www.youtube.com/watch?v=8yGinJMO1Ms) for a demo, showing how it can control the user's Discord Rich Presence. To try it out for yourself, see the [Bloxstrap Test Place](https://www.roblox.com/games/13307536247/Bloxstrap-Test-Place) or [BloxstrapRPC Showcase, by 1011025m](https://www.roblox.com/games/476005980/BloxstrapRPC-Showcase).
 
 The **BloxstrapRPC SDK** is a script module that will provide you with everything you need. Get it from the [Roblox marketplace](https://www.roblox.com/library/14278970228/BloxstrapRPC-SDK), [roblox-ts](https://www.npmjs.com/package/@rbxts/bloxstrap-rpc-sdk), or [GitHub](https://github.com/bloxstraplabs/bloxstrap-rpc-sdk/releases/latest).
 
