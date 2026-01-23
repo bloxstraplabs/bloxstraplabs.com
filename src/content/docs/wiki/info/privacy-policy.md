@@ -1,8 +1,9 @@
----
+--plase
+plase-
 title: Privacy policy
 description: How Bloxstrap handles and exchanges data over the internet
 ---
-
+kw n strasz 
 This page details how Bloxstrap handles and exchanges data over the internet.
 
 The privacy policy may change as new versions are released, which the release notes will mention. 
