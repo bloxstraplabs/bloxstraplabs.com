@@ -1,3 +1,5 @@
+nnasdqwerpj
+13q
 ---
 title: Bloxstrap and Bans
 description: You can't get banned for using Bloxstrap, and this page explains why.
