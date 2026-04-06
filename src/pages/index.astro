@@ -66,11 +66,11 @@ import ModsCard from '../assets/img/mods.png';
 		if (!window.navigator.userAgent.includes("Windows NT"))
 			document.getElementById("notice").classList.remove("hidden");
 
-		fetch('https://api.github.com/repos/bloxstraplabs/bloxstrap/releases/latest')
+		fetch("https://api.github.com/repos/bloxstraplabs/bloxstrap/releases/latest")
 			.then(r => r.json())
 			.then(json => {
-				const asset = json.assets.find(a => a.name.endsWith('.exe'));
-				if (asset) document.getElementById('download').href = asset.browser_download_url;
+				const asset = json.assets.find(a => a.name.endsWith(".exe"));
+				if (asset) document.getElementById("download").href = asset.browser_download_url;
 			});
 	</script>
 </Layout>
