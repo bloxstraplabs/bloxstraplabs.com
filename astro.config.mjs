@@ -23,6 +23,9 @@ export default defineConfig({
 				replacesTitle: true
 			},
 			customCss: ['./src/styles/starlight-custom.css'],
+			components: {
+        		Footer: './src/components/starlight/Footer.astro',
+      		},
 			social: [
 				{ icon: 'discord', label: 'Discord', href: '/discord' },
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/bloxstraplabs/bloxstrap' },

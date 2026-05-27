@@ -3,6 +3,7 @@ import '@fontsource-variable/montserrat';
 import '../styles/global.css';
 import { Image } from 'astro:assets';
 import Logo from '../assets/img/wordmark-dark.png';
+import FooterAds from '@components/FooterAds.astro';
 
 const { title, classes } = Astro.props;
 const year = new Date().getFullYear();
@@ -51,6 +52,7 @@ if (classes)
         </nav>
         <main class={mainClasses}>
 			<slot />
+            <FooterAds />
         </main>
         <footer class="text-center">
             <p>&copy; {year} Bloxstrap developers and contributors. Bloxstrap is not affiliated with Roblox in any way.</p>

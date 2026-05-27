@@ -4,6 +4,7 @@
   "exclude": ["dist"],
   "compilerOptions": {
     "paths": {
+      "@components/*": ["./src/components/*"],
       "@assets-wiki/*": ["src/assets/wiki/*"],
     }
   }
