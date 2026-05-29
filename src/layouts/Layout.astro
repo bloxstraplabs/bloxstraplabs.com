@@ -41,7 +41,9 @@ if (classes)
 	<body class="flex flex-col min-h-screen bg-neutral-900 text-white font-display mx-auto max-w-7xl p-8">
         <nav>
             <div class="bg-neutral-950 px-4 py-4 rounded-xl flex flex-col items-center justify-between gap-y-4 sm:flex-row">
-                <Image src={Logo} alt="Bloxstrap Logo" class="max-w-40" />
+                <a href="/">
+                    <Image src={Logo} alt="Bloxstrap Logo" class="max-w-40" />
+                </a>
                 <div class="flex gap-x-6 pr-2">
                     <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="/wiki/">Wiki</a>
                     <a class="font-medium text-gray-300 hover:text-white transition duration-300" href="/wiki/faq/">FAQ</a>
@@ -52,7 +54,7 @@ if (classes)
         </nav>
         <main class={mainClasses}>
 			<slot />
-            <FooterAds />
+            <FooterAds class="mt-12" />
         </main>
         <footer class="text-center">
             <p>&copy; {year} Bloxstrap developers and contributors. Bloxstrap is not affiliated with Roblox in any way.</p>
