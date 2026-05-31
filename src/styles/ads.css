@@ -11,8 +11,15 @@
     }
 
     .footer-ad {
-        max-width: calc(var(--spacing) * 96);
+        max-width: calc(var(--spacing) * 100);
+        max-height: calc(var(--spacing) * 100);
+
+        min-width: calc(var(--spacing) * 80);
+        min-height: calc(var(--spacing) * 80);
+
         margin-inline: auto;
+
+        /* background-color: white; */
 
         * {
             margin-inline: auto;
