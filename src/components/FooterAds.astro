@@ -5,18 +5,6 @@ const { class: className, ...rest } = Astro.props;
 
 <section class={className} {...rest}>
     <div class="footer-ads-container">
-        {
-            /*
-        <div class="footer-ad">
-            <div style="background-color: white; width: 300px; height: 300px;"></div>
-        </div>
-
-        <div class="footer-ad">
-            <div style="background-color: white; width: 300px; height: 300px;"></div>
-        </div>
-        */
-        }
-
         <div class="footer-ad">
             <script
                 async
@@ -31,6 +19,7 @@ const { class: className, ...rest } = Astro.props;
                 data-full-width-responsive="true"></ins>
             <script>
                 window.addEventListener("load", function () {
+                    console.log("Pushed");
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 });
             </script>
@@ -50,9 +39,14 @@ const { class: className, ...rest } = Astro.props;
                 data-full-width-responsive="true"></ins>
             <script>
                 window.addEventListener("load", function () {
+                    console.log("Pushed");
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 });
             </script>
+        </div>
+
+        <div class="footer-ads-notice">
+            <p>Advertisements &mdash; beware of any sketchiness :(</p>
         </div>
     </div>
 </section>
