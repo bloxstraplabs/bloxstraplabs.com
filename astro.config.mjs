@@ -11,7 +11,7 @@ export default defineConfig({
   },
 
   site: 'https://bloxstraplabs.com',
-  
+
   integrations: [
 		starlight({
 			title: 'Bloxstrap',
@@ -22,6 +22,16 @@ export default defineConfig({
 				dark: './src/assets/img/wordmark-dark.png',
 				replacesTitle: true
 			},
+			head: [
+				{
+					tag: 'script',
+					attrs: {
+						async: true,
+						src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1646308239542585',
+						crossorigin: 'anonymous'
+					}
+				}
+			],
 			customCss: ['./src/styles/starlight-custom.css'],
 			components: {
         		Footer: './src/components/starlight/Footer.astro',
