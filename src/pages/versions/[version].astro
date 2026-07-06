@@ -1,0 +1,43 @@
+---
+import { Markdown } from '@astropub/md';
+import Layout from "../../layouts/Layout.astro";
+import data from '../../data/generated/versions.json';
+
+export function getStaticPaths() {
+  return data.map(({ version, published_at, url, name, body, assets }) => {
+    return {
+      params: { version },
+      props: { published_at, url, name, body, assets },
+    };
+  });
+}
+
+const { version } = Astro.params;
+const { name, body, url, published_at, assets } = Astro.props;
+const published_date = new Date(published_at);
+const published_date_str = published_date.toLocaleString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+const title = `${name} — Release notes`
+---
+
+<Layout title={title} heading=true>
+    <p class="mb-6">Published <span class="font-medium" title={published_date.toString()}>{published_date_str}</span> &bull; <a class="bs-link" href={url}>View on Github</a></p>
+    <div class="mdblock">
+        <Markdown of={body} />
+    </div>
+
+    <h2 class="subheading mb-3" id="downloads">Download</h2>
+    {version != data[0].version && <p class="bg-amber-800 border-amber-700 border-2 p-3 rounded-md font-medium mb-3">This is an old version of Bloxstrap and it likely won't work right due to bugs or Roblox updates. Use at your own risk.</p>}
+    <div class="flex gap-3">
+    {
+      assets.map((asset) => (
+        <a href={asset.url} class="inline-block bg-violet-700 hover:bg-violet-800 transition duration-300 px-4 py-2 mb-2 rounded-md font-medium">
+			<svg class="inline-block fill-white h-5 pb-1 pr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+				<!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+				<path class="stroke-current stroke-10" d="M169.4 502.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7 224 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 370.7-105.4-105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+			</svg>
+			{asset.name} ({Math.round(asset.size/1024/1024*100)/100} MB)
+		</a>
+      ))
+    }
+    </div>
+</Layout>

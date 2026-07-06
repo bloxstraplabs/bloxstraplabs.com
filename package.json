@@ -1,12 +1,15 @@
 {
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prebuild": "node src/prebuild/versions.js"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.35.2",
+    "@astropub/md": "^1.0.0",
     "@fontsource-variable/montserrat": "^5.2.6",
     "@tailwindcss/vite": "^4.1.12",
     "astro": "^5.13.2",

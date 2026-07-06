@@ -1,11 +1,41 @@
 @import "tailwindcss";
 
-@theme {  
-    --font-display: 'Montserrat Variable', sans-serif; 
+@theme {
+    --font-display: 'Montserrat Variable', sans-serif;
 }
 
 @layer components {
+    .heading {
+        @apply text-4xl font-medium mb-4 sm:text-5xl;
+    }
+
+    .subheading {
+        @apply text-3xl font-medium mb-2;
+    }
+
+    .mdblock {
+        p {
+            @apply mb-4;
+        }
+
+        a {
+            @apply text-violet-300 hover:text-violet-400 transition duration-300 font-medium;
+        }
+
+        h1 {
+            @apply text-4xl font-medium mb-4;
+        }
+
+        h2 {
+            @apply text-3xl font-medium mb-2;
+        }
+
+        ul {
+            @apply list-disc px-6 mb-3;
+        }
+    }
+
     .bs-link {
-        @apply text-violet-300 hover:text-violet-400 transition duration-300;
+        @apply text-violet-300 hover:text-violet-400 transition duration-300 font-medium;
     }
 }

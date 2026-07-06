@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+!src/data/generated/.gitkeep
+src/data/generated

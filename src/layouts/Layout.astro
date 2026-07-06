@@ -5,7 +5,7 @@ import { Image } from 'astro:assets';
 import Logo from '../assets/img/wordmark-dark.png';
 import FooterAds from '@components/FooterAds.astro';
 
-const { title, classes } = Astro.props;
+const { title, classes, heading } = Astro.props;
 const year = new Date().getFullYear();
 
 let renderedTitle = 'Bloxstrap';
@@ -54,6 +54,7 @@ if (classes)
             </div>
         </nav>
         <main class={mainClasses}>
+            {heading && <h1 class="heading">{title}</h1>}
 			<slot />
             <FooterAds class="mt-12" />
         </main>

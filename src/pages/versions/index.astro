@@ -1,0 +1,22 @@
+---
+import data from '../../data/generated/versions.json';
+import Layout from "../../layouts/Layout.astro";
+
+function renderDate(version) {
+  const date = new Date(version.published_at);
+  return date.toLocaleString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+}
+---
+
+<Layout title="Release notes" heading=true>
+    <div class="max-w-sm">
+    {
+      data.map((version) => (
+        <div class="flex justify-between">
+            <p class="text-lg"><a class="bs-link" href={version.version}>{version.name}</a></p>
+            <p class="text-gray-400 italic">&mdash; {renderDate(version)}</p>
+        </div>
+      ))
+    }
+    </div>
+</Layout>

@@ -1,9 +1,11 @@
 ---
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
+import version_data from '../data/generated/versions.json';
 
-const version = "2.11.3";
-const download_url = `https://github.com/bloxstraplabs/bloxstrap/releases/download/v${version}/Bloxstrap-v${version}.exe`;
+const latest_version = version_data[0];
+const version = latest_version.version;
+const download_url = latest_version.assets[0].url; //`https://github.com/bloxstraplabs/bloxstrap/releases/download/v${version}/Bloxstrap-v${version}.exe`;
 ---
 
 <Layout title="Download" classes="text-center">
