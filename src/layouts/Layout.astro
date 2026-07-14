@@ -3,6 +3,7 @@ import '@fontsource-variable/montserrat';
 import '../styles/global.css';
 import { Image } from 'astro:assets';
 import Logo from '../assets/img/wordmark-dark.png';
+import Icon from '../assets/img/logo.png';
 import FooterAds from '@components/FooterAds.astro';
 
 const { title, classes, heading } = Astro.props;
@@ -26,16 +27,17 @@ if (classes)
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={description} />
         <meta name="author" content="Bloxstrap" />
+        <meta name="theme-color" content="#5e07c2" />
 		<title>{renderedTitle}</title>
         <link rel="canonical" href={Astro.url.href} />
         <link rel="sitemap" href="/sitemap-index.xml" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content={renderedTitle} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={Astro.url.href} />
         <meta property="og:locale" content="en" />
         <meta property="og:description" content={description} />
-        <meta property="og:site_name" content="Bloxstrap" />
+        <meta property="og:image" content={Icon.src} />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1646308239542585"
              crossorigin="anonymous"></script>
 	</head>
