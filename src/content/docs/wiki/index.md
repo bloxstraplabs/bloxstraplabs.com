@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: Welcome7
 description: Get help and information about Bloxstrap
 ---
 
